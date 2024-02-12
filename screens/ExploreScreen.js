@@ -20,7 +20,7 @@ const ExploreScreen = ({navigation}) => {
             Explore Screen
           </Text>
           <Button
-            onPress={() => navigation.navigate('SettingScreen')}
+            onPress={() => navigation.navigate('HomeScreenStack')}
             title="Go to Setting Screen"
           />
           <Button

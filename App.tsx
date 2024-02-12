@@ -6,24 +6,7 @@
  */
 
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import 'react-native-gesture-handler';
+// import 'react-native-gesture-handler';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -39,9 +22,9 @@ const Tab = createBottomTabNavigator();
 const HomeScreenStack = () => {
   return (
     <Stack.Navigator
-      initialRouteName="HomeScreen"
+      initialRouteName="HomeScreenStack"
       screenOptions={{headerShown: false}}>
-      <Stack.Screen name="BottomTabStack" component={SettingScreen} />
+      <Stack.Screen name="BottomTabStack" component={HomeScreen} />
     </Stack.Navigator>
   );
 };
